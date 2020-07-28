@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-27 23:06:35
- * @LastEditTime: 2020-07-28 00:29:35
+ * @LastEditTime: 2020-07-28 10:28:53
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\maintain.md
@@ -58,7 +58,13 @@
     * [new branch]      master     -> upstream/master
     Already up to date!
    ```
-5. Add you change, commit your change, and push your change to your forked repository by running:
+5. Change the [version number](https://docs.npmjs.com/updating-your-published-package-version-number), run one of the following command in terminal:
+   ```sh
+   $ npm version patch
+   $ npm version major
+   $ npm version minor
+   ```
+6. Add you change, commit your change, and push your change to your forked repository by running:
    ```sh
    $ git add .
    $ git commit -m "initial commit"
