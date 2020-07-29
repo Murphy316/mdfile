@@ -55,12 +55,11 @@ Strictly separate build and run stages.
 
 **How we do it**
 
-- package.json allows to configure "scripts" so that we can codify various tasks. npm run build is used to build this application and produces minified javascript and css files to be served as static assets.
+- package.json allows to configure "scripts" so that we can codify various tasks. **npm run build** is used to build this application and produces minified javascript and css files to be served as static assets.
 
-- npm start is used to start the application. The nodejs_buildpack runs this command by default to start your application.
+- **npm start** is used to start the application.
 
-- Unique to our OpenShift environment we make use of the .openshiftio build and deploy pipeline
-https://github.com/bcgov/CITZ-IMB-Capstone2020/.openshiftio/build.yaml
+- For details, go [here](https://github.com/bcgov/CITZ-IMB-Capstone2020/tree/master/.jenkins)
 
 ## VI. Processes
 
@@ -68,9 +67,10 @@ Execute the app as one or more stateless processes.
 
 **How we do it**
 
-- We listen to SIGTERM and SIGINT to know it's time to shutdown. The platform is constantly being updated even if our application is not. Machines die, security patches cause reboots. Server resources become consumed. Any of these things could cause the platform to kill your application. Don't worry though, OpenShift makes sure to start a new process on the new freshly patched host before killing your old process.
+- OpenShift Enterprise natively incorporates Docker containers in its deployable units. Docker containers are stateless and portable.
 
-- By listening to process signals, we know when to stop serving requests, flush connections, and close any open resources.
+- If state needs to be managed consider using redis.
+
 
 ## VII. Port binding
 
@@ -78,7 +78,7 @@ Export services via port binding.
 
 **How we do it**
 
-- OpenShift assigns our application instance a port on the host machine and exposes it through the PORT environment variable.
+- OpenShift assigns our application instance a port on the host machine and exposes it through the PORT environment variable
 
 ## VIII. Concurrency
 

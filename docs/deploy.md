@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-28 00:06:04
- * @LastEditTime: 2020-07-28 01:01:49
+ * @LastEditTime: 2020-07-29 11:42:08
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\deploy.md
@@ -64,3 +64,16 @@ https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/Jenkinsfile<br/>
 ### Step 8: **Solution Updated**
 
 1. Review the published solution on OpenShift was updated based on the code changes that were pushed to the gov master repo
+
+
+## Possible reason if pipeline not start (you need admin authorization to do so)
+
+1. Checkout the webhook which triggering between Jenkins app and Github
+
+    * Go settings -> Webhoosd in master repo see if the webhooks is green or not.
+    
+    ![Screenshot](./images/pip-wrong1.png)
+
+    * Go [here](https://jenkins-dev-1-xordpe-tools.pathfinder.gov.bc.ca/job/CITZ-IMB-CAPSTONE2020/configure) to checkout the credential is selected or not.
+
+    ![Screenshot](./images/pip-wrong2.png)

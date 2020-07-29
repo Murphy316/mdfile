@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-27 23:06:35
- * @LastEditTime: 2020-07-28 10:28:53
+ * @LastEditTime: 2020-07-29 11:09:18
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\maintain.md
@@ -31,8 +31,8 @@
    * Checkout your remote url, run following command in terminal:
    ```sh
    $ git remote -v
-    origin  https://github.com/Murphy316/CITZ-IMB-Capstone2020 (fetch)
-    origin  https://github.com/Murphy316/CITZ-IMB-Capstone2020 (push)
+    origin  https://github.com/${your_repo}/CITZ-IMB-Capstone2020 (fetch)
+    origin  https://github.com/${your_repo}/CITZ-IMB-Capstone2020 (push)
    ```
 
    * Adding a upstream url, run following command in terminal:
@@ -42,8 +42,8 @@
    * Checkout your remote url again, run following command in terminal:
    ```sh
    $ git remote -v
-    origin  https://github.com/Murphy316/CITZ-IMB-Capstone2020 (fetch)
-    origin  https://github.com/Murphy316/CITZ-IMB-Capstone2020 (push)
+    origin  https://github.com/${your_repo}/CITZ-IMB-Capstone2020 (fetch)
+    origin  https://github.com/${your_repo}/CITZ-IMB-Capstone2020 (push)
     upstream        https://github.com/bcgov/CITZ-IMB-Capstone2020.git (fetch)
     upstream        https://github.com/bcgov/CITZ-IMB-Capstone2020.git (push)
    ```
@@ -58,7 +58,12 @@
     * [new branch]      master     -> upstream/master
     Already up to date!
    ```
-5. Change the [version number](https://docs.npmjs.com/updating-your-published-package-version-number), run one of the following command in terminal:
+5.  Change the [version number](https://docs.npmjs.com/updating-your-published-package-version-number), run one of the following command in terminal:
+* (Commit everything before you increment the version number)
+    ```sh
+   $ git add .
+   $ git commit -m "initial commit"
+   ```
    ```sh
    $ npm version patch
    $ npm version major
