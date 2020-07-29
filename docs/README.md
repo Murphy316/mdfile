@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-28 22:06:43
- * @LastEditTime: 2020-07-29 14:40:17
+ * @LastEditTime: 2020-07-29 14:45:02
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\docs\README.md
@@ -34,7 +34,7 @@ During the summer of 2020 working with a developer team from Camosun College we 
 
 * ## PWA Starter-kit
 
-    This 'starter kit' was developed as a playbook "exemplar". We developed on the [BC DevExchange](D:\capstone2020\bcdevechange.org) OpenShift container platform and followed community best practices including adherence to the 12 factor approach. 
+    This 'starter kit' was developed as a playbook "exemplar". We developed on the [BC DevExchange](D:\capstone2020\bcdevechange.org) OpenShift container platform and follow community best practices including adherence to the 12 factor approach. 
 
 ## Twelve Factors
 
