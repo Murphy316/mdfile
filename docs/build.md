@@ -1,8 +1,8 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-27 22:48:48
- * @LastEditTime: 2020-07-27 23:05:12
- * @LastEditors: your name
+ * @LastEditTime: 2020-07-28 23:09:20
+ * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\BUILD\BUILD.md
 --> 
@@ -40,9 +40,9 @@ In this tutorial, I'll show you how I take over the solution app repository and 
    ```
 ## Conclusion
 
-    ```sh
-    $ git clone https://github.com/bcgov/CITZ-IMB-Capstone2020.git
-    $ cd CITZ-IMB-Capstone2020/
-    $ npm install
-    $ npm start
-    ```
+```sh
+$ git clone https://github.com/bcgov/CITZ-IMB-Capstone2020.git
+$ cd CITZ-IMB-Capstone2020/
+$ npm install
+$ npm start
+```
