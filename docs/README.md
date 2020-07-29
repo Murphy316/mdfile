@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-28 22:06:43
- * @LastEditTime: 2020-07-29 13:44:59
+ * @LastEditTime: 2020-07-29 13:50:23
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\docs\README.md
@@ -18,7 +18,7 @@ This solution is a react.js based client that consumes a DataBC API.
 
 During the summer of 2020 working with a developer team from Camosun College we designed and developed this starter kit as part of the Capstone2020 project sponsored by CITZ OCIO-ES Information Management Branch (IMB). The project included two key deliverables:
 
-## Modern Application Playbook?
+## Modern Application Playbook
 
 We developed our solution by following the CITZ IMB Modern application [playbook](https://bcgov.github.io/CITZ-IMB-playbook/) which describes a collection of references, tools, and best practices starting from product ideation, project approval, team formation, design, development stages through continuous improvement to the product sustainment lifecycle which our Agile team relied upon.
 
