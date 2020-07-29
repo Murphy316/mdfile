@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-28 22:06:43
- * @LastEditTime: 2020-07-29 14:22:24
+ * @LastEditTime: 2020-07-29 14:24:55
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\docs\README.md
@@ -97,16 +97,6 @@ Using a call back serviceworker script which maintains a connection with the hos
 * [./css](https://github.com/bcgov/CITZ-IMB-Capstone2020/tree/master/src/css) : solution style files.
 
 * [./index.js](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/src/index.js) :  where you have to register the service worker.
-
-# Application Shell
-
-The 'PWA starter kit' is based upon the create-react-app solution from Facebook.  It provides product owners with a basis to develop their own mobile applications. The key elements that this kit includes:
-
-1.	 **BCGov Branding (Header/footer):** </em>at this stage, the request has a status of **in-review**. Only at this stage can a user edit or delete the request, i.e. the edit and delete buttons are only visible on the request page at this stage. For the admin, they can either approve or disapprove the request, i.e. the request view page will show only the buttons for approval and disapproval.</em>
-
-2.	**Menu System:** <em>once the request has been approved the status changes to **pending** and, the user can no longer edit or delete it. For the admin, there will be a button on the request page to resolve the request.</em>
-
-3.	**App Shell:** <em>when a request is disapproved by an admin, the status changes to **disapproved** and no further action can be performed on it by either the user or admin.</em>
 
 # Data Architecture
 
