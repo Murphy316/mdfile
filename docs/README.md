@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-28 22:06:43
- * @LastEditTime: 2020-07-28 23:04:43
+ * @LastEditTime: 2020-07-29 12:49:26
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\docs\README.md
@@ -20,15 +20,15 @@ During the summer of 2020 working with a developer team from Camosun College we 
 
 ## Modern Application Playbook?
 
-The [playbook](https://bcgov.github.io/CITZ-IMB-playbook/) describes collection of references, tools, and best practices starting with  product ideation, project approval, team formation, design, development stages through continuous improvement to the product sustainment lifecycle which our Agile team relied upon.
+We developed our solution by following the CITZ IMB Modern application [playbook](https://bcgov.github.io/CITZ-IMB-playbook/) which describes a collection of references, tools, and best practices starting from product ideation, project approval, team formation, design, development stages through continuous improvement to the product sustainment lifecycle which our Agile team relied upon.
 
 ## PWA Starter-kit
 
-This ‘starter kit’ was developed as a playbook “exemplar”. We developed on the [BC DevExchange](D:\capstone2020\bcdevechange.org) OpenShift container platform and followed community best practices including adherence to the 12 factor approach. 
+This 'starter kit' was developed as a playbook "exemplar". We developed on the [BC DevExchange](D:\capstone2020\bcdevechange.org) OpenShift container platform and followed community best practices including adherence to the 12 factor approach. 
 
 ## Twelve Factors
 
-This solution conforms to the principles of cloud ready solution development and follows the twelve factors approach. We describe how we conform in this article.
+This solution conforms to the principles of cloud ready solution development and follows the twelve factors approach. We describe how we conform in this [article](./TwelveFactor.md).
 
 # Features
 
@@ -46,33 +46,53 @@ This solution conforms to the principles of cloud ready solution development and
 
 # Solution Architecture
 
-![Screenshot](./images/architecture.png)
+The 'PWA starter kit' is based upon the create-react-app solution from Facebook developed using react.js. This ‘start-kit’ provides product owners with a foundation to develop mobile applications. The key elements which are provided include:
 
-Capstone2020 is a solution exemplar  developed on the BC Dev Exchange OpenShift platform using the facebook ‘create-react-app’ framework developed using react.js. The Capstone app is a progressive web app that can be user installed on Android devices. 
+1.	**BCGov Branding (Header/footer):** at this stage, the request has a status of **in-review**. Only at this stage can a user edit or delete the request, i.e. the edit and delete buttons are only visible on the request page at this stage. For the admin, they can either approve or disapprove the request, i.e. the request view page will show only the buttons for approval and disapproval.
 
-Using a call back serviceworker it maintains a connection with the hosting environment allowing the user to be notified if solution updates are deployed.
+2.	**Menu System:** <em>once the request has been approved the status changes to **pending** and, the user can no longer edit or delete it. For the admin, there will be a button on the request page to resolve the request.</em>
+
+3.	**App Shell:** <em>when a request is disapproved by an admin, the status changes to **disapproved** and no further action can be performed on it by either the user or admin.</em>
+
+<br/>
+
+![Screenshot](./images/Architecture.png)
+
+The Capstone app is a progressive web app that can be user installed on Android devices.
+
+Using a call back serviceworker script which maintains a connection with the hosting environment thereby allowing the user to be notified when solution updates are deployed.
+
+## App Start: 
+
+![Screenshot](./images/app-start.png)
+
+Some text that describes what is happening here
+
+
+## Selecting features:
+
+![Screenshot](./images/selecting-features.png)
+
+Some text that explains what is happening here
+
 
 ###	Key files:
 
-* [./src/views](https://github.com/bcgov/CITZ-IMB-Capstone2020/tree/master/src/views) : solution code files.
+[./.env](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/.env) : where the news API located.
 
-* [./src/css](https://github.com/bcgov/CITZ-IMB-Capstone2020/tree/master/src/css) : solution style files.
+[./public/](https://github.com/bcgov/CITZ-IMB-Capstone2020/tree/master/public)
 
-* [./jenkins](https://github.com/bcgov/CITZ-IMB-Capstone2020/tree/master/.jenkins) : Jenkins IO files.
-
-* [./.openshiftio](https://github.com/bcgov/CITZ-IMB-Capstone2020/tree/master/.openshiftio) : OpenShift IO files.
-
-* [.env](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/.env) : where the news API located.
-
-* [https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/package.json](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/package.json) : all npm packages located.
-
-* [Jenkinsfile](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/Jenkinsfile) : pipeline script.
-
-* [serviceworker.js](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/public/serviceworker.js) : where you have to run the service worker.
+* [index.html](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/public/index.html) : solution entry point
 
 * [manifest.json](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/public/manifest.json) : where you have to update the icon based on different display sizes.
 
-* [index.js](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/src/index.js) :  where you have to register the service worker.
+[./src/](https://github.com/bcgov/CITZ-IMB-Capstone2020/tree/master/src)
+
+* [./views](https://github.com/bcgov/CITZ-IMB-Capstone2020/tree/master/src/views) : solution code files.
+
+* [./css](https://github.com/bcgov/CITZ-IMB-Capstone2020/tree/master/src/css) : solution style files.
+
+* [./index.js](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/src/index.js) :  where you have to register the service worker.
 
 # Application Shell
 
@@ -86,7 +106,12 @@ The 'PWA starter kit' is based upon the create-react-app solution from Facebook.
 
 # Data Architecture
 
-1.	A brief overview
+* The data return from [NewsAPI](https://catalogue.data.gov.bc.ca/dataset/bc-gov-news-api-service/resource/3692fd5e-87e2-47ab-8eee-9131ea249436) : Key-value pairs in JSON format.
+
+* The data **after* converting JSON format in [FetchLatestNews.js](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/src/views/FetchLatestNews.js) ( line:30 ): String Array
+
+* Cookie [FetchLatestNews.js](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/src/views/FetchLatestNews.js) ( line:23 ): String Array
+
 
 
 # Technologies used
@@ -99,13 +124,11 @@ The 'PWA starter kit' is based upon the create-react-app solution from Facebook.
 
 4.	[Webpack](https://webpack.js.org/), a module bundler for mobile applications. Used as a build tool to bundle  JS and CSS files into a single file. Also used to set up a dev server for local development.
 
-5.	[ESLint](https://eslint.org/), a linter tool for pattern identification and reporting in JavaScript, which I used alongside the [Airbnb style guide](https://github.com/airbnb/javascript).
+5.	[OpenShift](https://www.openshift.com/) , a hosting environment wich includes the runtime container and REST API, coordination, and web interfaces to deploy and manage individual containers
 
-6.	[OpenShift](https://www.openshift.com/) , a hosting environment wich includes the runtime container and REST API, coordination, and web interfaces to deploy and manage individual containers
+6.	[Jenkins](https://www.jenkins.io/), a deployment pipeline described how to test, build, and deploy app from GitHub to OpenSHift
 
-7.	[Jenkins](https://www.jenkins.io/), a deployment pipeline described how to test, build, and deploy app from GitHub to OpenSHift
-
-8.	[GitHub](https://github.com/) a the source code repository 
+7.	[GitHub](https://github.com/) a the source code repository 
 
 # Additional technologies you may want to use
 
@@ -113,31 +136,59 @@ The 'PWA starter kit' is based upon the create-react-app solution from Facebook.
 
 2.	[Express](https://expressjs.com/), a web framework for Node.js. 
 
-3.	[Webpack](https://webpack.js.org/), a module bundler for mobile applications. Used as a build tool to bundle  JS and CSS files into a single file. Also used to set up a dev server for local development.
+3.	[Babel](https://babeljs.io/), a toolchain used to convert ES5+ code into backwards-compatible JavaScript code for current or older browsers.
 
-4.	[Babel](https://babeljs.io/), a toolchain used to convert ES5+ code into backwards-compatible JavaScript code for current or older browsers.
+4.	[Jest](https://jestjs.io/) and [Enzyme](https://github.com/airbnb/enzyme), testing utilities for JavaScript and React applications.
 
-5.	[Jest](https://jestjs.io/) and [Enzyme](https://github.com/airbnb/enzyme), testing utilities for JavaScript and React applications.
+5.	[ESLint](https://eslint.org/), a linter tool for pattern identification and reporting in JavaScript, which I used alongside the [Airbnb style guide](https://github.com/airbnb/javascript).
 
-6.	[ESLint](https://eslint.org/), a linter tool for pattern identification and reporting in JavaScript, which I used alongside the [Airbnb style guide](https://github.com/airbnb/javascript).
+6.	[MongoDB](https://www.mongodb.com/), a document database with the scalability and flexibility that you want with the querying and indexing that you need.
 
-7.	[MongoDB](https://www.mongodb.com/), a document database with the scalability and flexibility that you want with the querying and indexing that you need.
+7. [Postgress](https://www.postgresql.org/about/), a powerful, open source object-relational database system.
 
-9. [Postgress](https://www.postgresql.org/about/), a powerful, open source object-relational database system.
-
-9.	[Redis](https://redis.io/topics/introduction), an open source, in-memory data structure store, used as a database, cache and message broker. 
+8.	[Redis](https://redis.io/topics/introduction), an open source, in-memory data structure store, used as a database, cache and message broker. 
 
 **A full list of the tools and technologies used in this project is available in the <em>package.json</em> file.**
 
+# Possible solution enhancements
+
+1.	**User Stories**,  maintaining a user story catalogue ensures that developed features align to value statements and identify enhancement opportunities.
+
+2.	**Push notification**, incorporate a communication channel to the user notifying them of specific features , service availability windows, feedback channels. PWA architecture supports this ability.
+
+3.	**Testing**, due to time considerations we did not develop a robust suite of tests using jest or Enzyme. You should!
+
+4.	**Logging**, on the roadmap but not implemented. Incorporate analytics by logging events that will provide information about the user experience. Consider using the winston library and logging  your event streams to the IMB Logstash collector. 
+
+5.	**Menu system**, consider implementing a sliding menu as is common in most mobile apps
+
+6.	**Database**, the starter kit would benefit by having a backing database service and the use of Redux (or equiv) robust data handling.
+
+7.	**Oauth**, there are use cases where user authentication is a requirement
+
+
 # Contributing
 
-This is an open-source project licensed under the MIT licensing agreement and as such contributions are highly welcome. However, there are some recommended guidelines to follow to ensure proper collaboration by everybody. Before we get to those, however, here is how you will get the project set up on your local development system (first ensure you have Node and npm installed):
+This is an open-source project licensed under the Apache licensing agreement and as such contributions are highly welcome. However, there are some recommended guidelines to follow to ensure proper collaboration by everybody. Before we get to those, however, here is how you will get the project set up on your local development system (first ensure you have Node and npm installed):
 
 ## Getting set up
 
 Follow the [Build Solution on your Local Environment](./build.md) tutorial.
 
 Everything you need to know about this can be found in the tutorial. It includes formats for commit messages, branch naming and PR description.
+
+## Deploying to OpenShift
+Follow the Deploy to openshift tutorial.
+
+* [Morden web apps to OpenShift Part 1 - Web apps in two commands](https://developers.redhat.com/blog/2018/10/04/modern-web-apps-openshift-part-1/)
+
+* [Morden web apps to OpenShift Part 2 - chained builds](https://developers.redhat.com/blog/2018/10/23/modern-web-applications-on-openshift-part-2-using-chained-builds/)
+
+* [Morden web apps to OpenShift Part 3 - development environment](https://developers.redhat.com/blog/2019/01/17/modern-web-applications-on-openshift-part-3-openshift-as-a-development-environment/)
+
+* [Morden web apps to OpenShift Part 4 - Pipelines](https://developers.redhat.com/blog/2020/04/27/modern-web-applications-on-openshift-part-4-openshift-pipelines/)
+
+Everything you need to know about this can be found in the tutorial.
 
 ## Maintaining your solution
 
