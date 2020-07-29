@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-28 22:06:43
- * @LastEditTime: 2020-07-29 13:50:23
+ * @LastEditTime: 2020-07-29 14:17:55
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\docs\README.md
@@ -14,17 +14,27 @@ This solution is a react.js based client that consumes a DataBC API.
 
 <em>Capstone2020 is an application that provides a starter-kit for BC Gov programme areas to launch a user installable mobile app with the ability to deliver information to users, or to collect information from users as part of a digital solution. This guide is a designed as a series of tutorials.</em>
 
+## Prerequisites
+It is assumed that your team is familiar with modern web based programming languages and techniques. This solution was developed using:
+
+* [react.js](https://reactjs.org/docs/getting-started.html) framework and,
+
+* makes use of [redux.js](https://redux.js.org/)
+
+* an understanding of [Progressive Web Applications](https://web.dev/progressive-web-apps/) will help     
+
+
 ## How we developed the 'PWA starter kit'
 
 During the summer of 2020 working with a developer team from Camosun College we designed and developed this starter kit as part of the Capstone2020 project sponsored by CITZ OCIO-ES Information Management Branch (IMB). The project included two key deliverables:
 
-## Modern Application Playbook
+* ## Modern Application Playbook
 
-We developed our solution by following the CITZ IMB Modern application [playbook](https://bcgov.github.io/CITZ-IMB-playbook/) which describes a collection of references, tools, and best practices starting from product ideation, project approval, team formation, design, development stages through continuous improvement to the product sustainment lifecycle which our Agile team relied upon.
+    We developed our solution by following the CITZ IMB Modern application [playbook](https://bcgov.github.io/CITZ-IMB-playbook/) which describes a collection of references, tools, and best practices starting from product ideation, project approval, team formation, design, development stages through continuous improvement to the product sustainment lifecycle which our Agile team relied upon.
 
-## PWA Starter-kit
+* ## PWA Starter-kit
 
-This 'starter kit' was developed as a playbook "exemplar". We developed on the [BC DevExchange](D:\capstone2020\bcdevechange.org) OpenShift container platform and followed community best practices including adherence to the 12 factor approach. 
+    This 'starter kit' was developed as a playbook "exemplar". We developed on the [BC DevExchange](D:\capstone2020\bcdevechange.org) OpenShift container platform and followed community best practices including adherence to the 12 factor approach. 
 
 ## Twelve Factors
 
@@ -66,15 +76,9 @@ Using a call back serviceworker script which maintains a connection with the hos
 
 ![Screenshot](./images/app-start.png)
 
-Some text that describes what is happening here
-
-
 ## Selecting features:
 
 ![Screenshot](./images/selecting-features.png)
-
-Some text that explains what is happening here
-
 
 ###	Key files:
 
