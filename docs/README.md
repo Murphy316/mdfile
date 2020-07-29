@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-28 22:06:43
- * @LastEditTime: 2020-07-29 14:17:55
+ * @LastEditTime: 2020-07-29 14:20:37
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\docs\README.md
@@ -226,3 +226,6 @@ Everything you need to know about this can be found in the tutorial. It includes
 * BC DevExchange
 
     https://bcdevexchange.org/
+
+* React Architecture
+https://www.simform.com/react-architecture-best-practices/
