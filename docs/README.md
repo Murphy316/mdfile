@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-28 22:06:43
- * @LastEditTime: 2020-07-29 12:49:26
+ * @LastEditTime: 2020-07-29 13:44:59
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\docs\README.md
@@ -56,7 +56,7 @@ The 'PWA starter kit' is based upon the create-react-app solution from Facebook 
 
 <br/>
 
-![Screenshot](./images/Architecture.png)
+![Screenshot](./images/architecture.png)
 
 The Capstone app is a progressive web app that can be user installed on Android devices.
 
