@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-27 22:48:48
- * @LastEditTime: 2020-07-28 23:09:20
+ * @LastEditTime: 2020-07-29 14:37:36
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\BUILD\BUILD.md
@@ -21,6 +21,9 @@ In this tutorial, I'll show you how I take over the solution app repository and 
     ```sh
     $ git clone https://github.com/bcgov/CITZ-IMB-Capstone2020.git
     ```
+
+    **Click [here](./output.txt) to view a file hierarchy tree.**
+
 3. To navigate into our solution root folder (the folder has package.json file), run following command in terminal:
 
     ```sh
