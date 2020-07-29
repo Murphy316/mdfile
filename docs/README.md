@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-28 22:06:43
- * @LastEditTime: 2020-07-29 14:24:55
+ * @LastEditTime: 2020-07-29 14:40:17
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\docs\README.md
@@ -81,6 +81,11 @@ Using a call back serviceworker script which maintains a connection with the hos
 ![Screenshot](./images/selecting-features.png)
 
 ###	Key files:
+
+To view the file folder structure and hierarchy review the [build.md](./build.md) file
+
+The main files you will familiarize youself with are: 
+
 
 [./.env](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/.env) : where the news API located.
 
