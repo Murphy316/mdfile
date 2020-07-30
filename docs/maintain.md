@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-27 23:06:35
- * @LastEditTime: 2020-07-30 10:50:12
+ * @LastEditTime: 2020-07-30 11:45:10
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\maintain.md
@@ -157,6 +157,15 @@
 
 # Debuging Tips:
 
+As an experienced developer you will have your established approach to debugging often based on the tools you use. With the ever changing libraries and patterns keeping up with community best practices , using forums such as stackoverflow can help maintain your development and defect remediation velocity.
+
+Here are a few useful articles we recommend
+
+* https://medium.com/@baphemot/intro-to-debugging-reactjs-applications-67cf7a50b3dd
+ 
+* https://raygun.com/blog/react-debugging-guide/
+ 
+* https://blog.logrocket.com/debug-react-applications-with-the-new-react-devtools/
 
 # Summary:
 

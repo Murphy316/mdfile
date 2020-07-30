@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-28 22:06:43
- * @LastEditTime: 2020-07-30 11:35:11
+ * @LastEditTime: 2020-07-30 11:43:30
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\docs\README.md
@@ -42,7 +42,7 @@ During the summer of 2020 working with a developer team from Camosun College we 
     You can find his come at this [link](https://github.com/gglukmann/cra-sw).
 
 
-# Best Practices
+## Best Practices
 1.	**12 Factor:** This solution conforms to the principles of cloud-ready solution development and follows the twelve factors approach. We describe how we conform in this article.
 
 2.	**STRA:** contact the [Ministry Information Security Officer](https://intranet.gov.bc.ca/thehub/ocio/ocio-enterprise-services/information-security-branch/miso-contacts) (MISO) for security advice and guidance for your project.  
