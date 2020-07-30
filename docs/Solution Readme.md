@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-28 22:06:43
- * @LastEditTime: 2020-07-30 11:20:41
+ * @LastEditTime: 2020-07-30 11:35:11
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\docs\README.md
@@ -42,20 +42,22 @@ During the summer of 2020 working with a developer team from Camosun College we 
     You can find his come at this [link](https://github.com/gglukmann/cra-sw).
 
 
-# Compliance
+# Best Practices
 1.	**12 Factor:** This solution conforms to the principles of cloud-ready solution development and follows the twelve factors approach. We describe how we conform in this article.
 
-2.	**STRA/PIA:** contact the Ministry MSIO to guide your project. Comply with [OWASP](https://owasp.org/) best practices. 
+2.	**STRA:** contact the [Ministry Information Security Officer](https://intranet.gov.bc.ca/thehub/ocio/ocio-enterprise-services/information-security-branch/miso-contacts) (MISO) for security advice and guidance for your project.  
 
-3.	**Standards:** Follow Governments Application & Web Development & Deployment standard Outline and the database security standard for Information Protection Standard . 
+3. **PIA:** contact the [Ministry Privacy Officer](https://www2.gov.bc.ca/gov/content/governments/services-for-government/information-management-technology/privacy/resources/privacy-officers) (MPO) for privacy advice and guidance for your project
 
-4.	**Best Practices:** 
+4.	**Standards:** Follow Governments Application & Web Development & Deployment standard Outline and the database security standard for Information Protection Standard . 
+
+5.	**Best Practices:** 
     * Design for Data: Use [Flux](https://facebook.github.io/flux/) as an architectural pattern.
     * Follow the [AirBnB](https://github.com/airbnb/javascript/tree/master/react) react.js style guide. 
     * Regular google searches in order to keep up to date with community best practices such as these:
         * https://www.codeinwp.com/blog/react-best-practices/
         * https://medium.com/@konstankino/2019-reactjs-best-practices-design-patterns-516e1c3ca06a
-5.	**Use the IMB Checklist:** An end-of-project review was conducted using the playbook checklist as the scoring reference. It is available [here](./Playbook-Capstone2020-Checklist.pdf).
+6.	**Use the IMB Checklist:** An end-of-project review was conducted using the playbook checklist as the scoring reference. It is available [here](./Playbook-Capstone2020-Checklist.pdf).
 
 
 # Features
