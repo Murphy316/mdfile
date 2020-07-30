@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-28 22:06:43
- * @LastEditTime: 2020-07-29 21:31:51
+ * @LastEditTime: 2020-07-30 09:30:27
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\docs\README.md
@@ -106,7 +106,9 @@ The 'PWA starter kit' is based upon the create-react-app solution from Facebook 
 
 <br/>
 
-![Screenshot](./images/architecture.png)
+<p align="center">
+    <img src="./images/architecture.png">
+</p>
 
 ## App Start: 
 
@@ -122,15 +124,17 @@ The 'PWA starter kit' is based upon the create-react-app solution from Facebook 
 
 <br/>
 
-![Screenshot](./images/app-start.png)
+<p align="center">
+    <img src="./images/app-start.png">
+</p>
 
 ## Selecting features:
 
 * As shown in the [Features](https://github.com/Murphy316/mdfile/blob/master/docs/README.md#features) description there are several features we have implemented in the starter-kit that demonstrate filtering the results that are returned from the NewsBC API as well as the other user-selected options such as "Dark/Light Mode",  "Show/Hide Text", bookmarked story "Favorites". When a user selects "End Session" all of the cookies associated with the user will be destroyed.
 
-
-![Screenshot](./images/selecting-features.png)
-
+<p align="center">
+    <img src="./images/selecting-features.png">
+</p>
 
 ###	Key files:
 
