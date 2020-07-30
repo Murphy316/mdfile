@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-28 22:06:43
- * @LastEditTime: 2020-07-30 09:30:27
+ * @LastEditTime: 2020-07-30 11:20:41
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\docs\README.md
@@ -15,7 +15,9 @@ This solution is a react.js based client that consumes a DataBC API.
 <em>Capstone2020 is an application that provides a starter-kit for BC Gov program areas to launch a user-installable mobile app with the ability to deliver information to users or to collect information from users as part of a digital solution. This guide is designed as a series of tutorials.</em>
 
 ## Prerequisites
-It is assumed that your team is familiar with modern web-based programming languages and techniques. This solution was developed using:
+It is assumed that your team is familiar with modern web-based programming languages and techniques. If you are new to react start by reading [this article](https://reactjs.org/docs/thinking-in-react.html) 
+
+This solution was developed using:
 
 * [react.js](https://reactjs.org/docs/getting-started.html) framework and,
 
@@ -40,15 +42,27 @@ During the summer of 2020 working with a developer team from Camosun College we 
     You can find his come at this [link](https://github.com/gglukmann/cra-sw).
 
 
-## Twelve Factors
+# Compliance
+1.	**12 Factor:** This solution conforms to the principles of cloud-ready solution development and follows the twelve factors approach. We describe how we conform in this article.
 
-This solution conforms to the principles of cloud-ready solution development and follows the twelve factors approach. We describe how we conform in this [article](./TwelveFactor.md).
+2.	**STRA/PIA:** contact the Ministry MSIO to guide your project. Comply with [OWASP](https://owasp.org/) best practices. 
+
+3.	**Standards:** Follow Governments Application & Web Development & Deployment standard Outline and the database security standard for Information Protection Standard . 
+
+4.	**Best Practices:** 
+    * Design for Data: Use [Flux](https://facebook.github.io/flux/) as an architectural pattern.
+    * Follow the [AirBnB](https://github.com/airbnb/javascript/tree/master/react) react.js style guide. 
+    * Regular google searches in order to keep up to date with community best practices such as these:
+        * https://www.codeinwp.com/blog/react-best-practices/
+        * https://medium.com/@konstankino/2019-reactjs-best-practices-design-patterns-516e1c3ca06a
+5.	**Use the IMB Checklist:** An end-of-project review was conducted using the playbook checklist as the scoring reference. It is available [here](./Playbook-Capstone2020-Checklist.pdf).
+
 
 # Features
 
 1. **Installable mobile solution:**  <em>the Capstone2020 starter kit web site was designed to be a user-installable mobile solution. When the user visits the landing page they are asked if they wish to install the solution locally. The mechanics of how this I have done is handled by the progressive Web App (PWA) framework.</em>
 
-    <em>Notice below: the user is prompted with an **install notice**. Optionally some devices will show an install button ( shown with a yellow box )</em>
+    <em>Notice below: the user is prompted with an **install notice**. Optionally some devices will show an install button (shown with a yellow box )</em>
 
     <p align="center">
         <img src="./images/feature1.png">
@@ -96,13 +110,17 @@ This solution conforms to the principles of cloud-ready solution development and
 
 # Solution Architecture
 
-The 'PWA starter kit' is based upon the create-react-app solution from Facebook developed using react.js. This ‘start-kit’ provides product owners with a foundation to develop mobile applications. The key elements which are provided include:
+The 'PWA starter kit' is based upon the create-react-app solution from Facebook developed using react.js. This ‘start-kit’ provides product owners with a foundation to develop mobile applications. 
 
-1.	**BCGov Branding (Header/footer):** at this stage, the request has a status of **in-review**. Only at this stage can a user edit or delete the request, i.e. the edit and delete buttons are only visible on the request page at this stage. For the admin, they can either approve or disapprove the request, i.e. the request view page will show only the buttons for approval and disapproval.
+By using the start-kit you are inheriting architecture decisions. You should review and adapt the architecture to meet your unique needs. [This article](https://blog.usejournal.com/architecting-your-react-application-5af9cd65a891) to start you on your journey.
 
-2.	**Menu System:** <em>once the request has been approved the status changes to **pending** and, the user can no longer edit or delete it. For the admin, there will be a button on the request page to resolve the request.</em>
+The key elements which are provided include:
 
-3.	**App Shell:** <em>when a request is disapproved by an admin, the status changes to **disapproved** and no further action can be performed on it by either the user or admin.</em>
+1.	**BCGov Branding (Header/footer):**  located in the .src/views/[header.js](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/src/views/Header.js) and [footer.js](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/src/views/Footer.js) files.
+
+2.	**Menu System:**  [uses the react-bootstrap/Dropdown library](https://react-bootstrap.github.io/components/dropdowns/
+)
+3.	**App Shell:** The Starter-kit uses an App Shell model, [this document](https://developers.google.com/web/fundamentals/architecture/app-shell) identifies the advantage of following this approach as being: <em>"minimal HTML, CSS and JavaScript required to power the user interface and when cached offline can ensure instant, reliably good performance to users on repeat visits"</em>
 
 <br/>
 
@@ -149,7 +167,7 @@ The main files you will familiarize yourself with are:
 
 * [index.html](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/public/index.html) : solution entry point
 
-* [manifest.json](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/public/manifest.json) : where you have to update the icon based on different display sizes.
+* [manifest.json](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/public/manifest.json) : for details of why you need this read [this article](https://web.dev/add-manifest/).
 
 [./src/](https://github.com/bcgov/CITZ-IMB-Capstone2020/tree/master/src)
 
@@ -157,15 +175,15 @@ The main files you will familiarize yourself with are:
 
 * [./css](https://github.com/bcgov/CITZ-IMB-Capstone2020/tree/master/src/css) : solution style files.
 
-* [./index.js](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/src/index.js) :  where you have to register the service worker.
+* [./index.js](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/src/index.js) : where the service worker is registered.
 
-# Data Architecture
+## Data Architecture
 
-* The data return from [NewsAPI](https://catalogue.data.gov.bc.ca/dataset/bc-gov-news-api-service/resource/3692fd5e-87e2-47ab-8eee-9131ea249436) : Key-value pairs in JSON format.
+* The data return from [NewsAPI](https://catalogue.data.gov.bc.ca/dataset/bc-gov-news-api-service/resource/3692fd5e-87e2-47ab-8eee-9131ea249436) consists of  key-value pairs in JSON format.
 
-* The data **after* converting JSON format in [FetchLatestNews.js](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/src/views/FetchLatestNews.js) ( line:30 ): String Array
+* The data **after* converting JSON format in [FetchLatestNews.js](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/src/views/FetchLatestNews.js) (line:30 ) is a string array
 
-* Cookie [FetchLatestNews.js](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/src/views/FetchLatestNews.js) ( line:23 ): String Array
+* Cookie [FetchLatestNews.js](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/src/views/FetchLatestNews.js) (line:23 ) stores data in a  string array
 
 
 
@@ -179,9 +197,9 @@ The main files you will familiarize yourself with are:
 
 4.	[Webpack](https://webpack.js.org/), a module bundler for mobile applications. Used as a build tool to bundle  JS and CSS files into a single file. Also used to set up a dev server for local development.
 
-5.	[OpenShift](https://www.openshift.com/) , a hosting environment wich includes the runtime container and REST API, coordination, and web interfaces to deploy and manage individual containers
+5.	[OpenShift](https://www.openshift.com/) , a hosting environment which includes the runtime container and REST API, coordination, and web interfaces to deploy and manage individual containers
 
-6.	[Jenkins](https://www.jenkins.io/), a deployment pipeline described how to test, build, and deploy app from GitHub to OpenSHift
+6.	[Jenkins](https://www.jenkins.io/), a deployment pipeline described how to test, build, and deploy app from GitHub to OpenShift
 
 7.	[GitHub](https://github.com/) a the source code repository 
 
@@ -195,7 +213,7 @@ The main files you will familiarize yourself with are:
 
 4.	[Jest](https://jestjs.io/) and [Enzyme](https://github.com/airbnb/enzyme), testing utilities for JavaScript and React applications.
 
-5.	[ESLint](https://eslint.org/), a linter tool for pattern identification and reporting in JavaScript, which I used alongside the [Airbnb style guide](https://github.com/airbnb/javascript).
+5.	[ESLint](https://eslint.org/), a linter tool for pattern identification and reporting in JavaScript, use alongside the [Airbnb style guide](https://github.com/airbnb/javascript).
 
 6.	[MongoDB](https://www.mongodb.com/), a document database with the scalability and flexibility that you want with the querying and indexing that you need.
 
@@ -203,7 +221,7 @@ The main files you will familiarize yourself with are:
 
 8.	[Redis](https://redis.io/topics/introduction), an open source, in-memory data structure store, used as a database, cache and message broker. 
 
-**A full list of the tools and technologies used in this project is available in the <em>package.json</em> file.**
+**A full list of the tools and technologies used in this project is available in the <em>[package.json](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/package.json)</em> file.**
 
 # Possible solution enhancements
 
@@ -221,6 +239,8 @@ The main files you will familiarize yourself with are:
 
 7.	**Oauth**, there are use cases where user authentication is a requirement
 
+8.	**Dark mode**, consider changing how the menu system reacts the dark mode. In the ‘Starter-kit’ Alpha version this has been identified as a defect. 
+
 
 # Contributing
 
@@ -228,20 +248,20 @@ This is an open-source project licensed under the Apache licensing agreement and
 
 ## Getting set up
 
-Follow the [Build Solution on your Local Environment](./build.md) tutorial.
+Follow the [local installation](./build.md) tutorial.
 
 We hope that everything you need to know about the Capstone2020 PWA starter-kit can be found in the tutorial. If you have a suggestion or an improvement please open a GitHub issue on the [main starter-kit repository](https://github.com/bcgov/CITZ-IMB-Capstone2020).
 
 ## Deploying to OpenShift
 Follow the Deploy to OpenShift tutorial.
 
-* [Morden web apps to OpenShift Part 1 - Web apps in two commands](https://developers.redhat.com/blog/2018/10/04/modern-web-apps-openshift-part-1/)
+* [Modern web apps to OpenShift Part 1 - Web apps in two commands](https://developers.redhat.com/blog/2018/10/04/modern-web-apps-openshift-part-1/)
 
-* [Morden web apps to OpenShift Part 2 - chained builds](https://developers.redhat.com/blog/2018/10/23/modern-web-applications-on-openshift-part-2-using-chained-builds/)
+* [Modern web apps to OpenShift Part 2 - chained builds](https://developers.redhat.com/blog/2018/10/23/modern-web-applications-on-openshift-part-2-using-chained-builds/)
 
-* [Morden web apps to OpenShift Part 3 - development environment](https://developers.redhat.com/blog/2019/01/17/modern-web-applications-on-openshift-part-3-openshift-as-a-development-environment/)
+* [Modern web apps to OpenShift Part 3 - development environment](https://developers.redhat.com/blog/2019/01/17/modern-web-applications-on-openshift-part-3-openshift-as-a-development-environment/)
 
-* [Morden web apps to OpenShift Part 4 - Pipelines](https://developers.redhat.com/blog/2020/04/27/modern-web-applications-on-openshift-part-4-openshift-pipelines/)
+* [Modern web apps to OpenShift Part 4 - Pipelines](https://developers.redhat.com/blog/2020/04/27/modern-web-applications-on-openshift-part-4-openshift-pipelines/)
 
 Everything you need to know about this can be found in the tutorial.
 

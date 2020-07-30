@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-27 23:06:35
- * @LastEditTime: 2020-07-29 21:21:07
+ * @LastEditTime: 2020-07-30 10:50:12
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\maintain.md
@@ -154,6 +154,9 @@
 7. The overview page will pop-up after deployment. Open the solution app by clicking the URL under the overview page.
 
     ![Screenshot](./images/app.png)
+
+# Debuging Tips:
+
 
 # Summary:
 
