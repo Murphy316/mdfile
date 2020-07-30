@@ -1,18 +1,21 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-27 23:06:35
- * @LastEditTime: 2020-07-29 11:09:18
+ * @LastEditTime: 2020-07-29 19:19:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\maintain.md
 --> 
-# Maintain Capstone 2020 Solution App
+# Maintaining your Capstone2020 Start-Kit App
 
 
 # Introduction
 
-* In this tutorial, I'll show you how to maintain Capstone 2020 solution app.
-* Instead of using OpenShift and the local environment, using [Netlify](https://www.netlify.com/) as the example of a platform for hosting/maintaining our solution app.
+* In this tutorial, I'll provide you with tips and best practices to help you maintain your Capstone2020 starter-kit based solution app.
+
+* When testing your local development  we suggest using the [Netlify](https://www.netlify.com/) as a rapid test platform once you have your solution working the way your users expect, then deploy to your intended environment (OpenShift, Azure, AWS etc). 
+Developing in your Private Solution Repository
+
 
 ## How to Taking Control the Solution Code from Gov's master Repository to Your Repository
 
@@ -69,7 +72,7 @@
    $ npm version major
    $ npm version minor
    ```
-6. Add you change, commit your change, and push your change to your forked repository by running:
+6. Add your change(s), commit your change(s), and push your change(s) to your forked repository by running:
    ```sh
    $ git add .
    $ git commit -m "initial commit"
@@ -150,3 +153,9 @@
 7. The overview page will pop-up after deployment. Open the solution app by clicking the URL under the overview page.
 
     ![Screenshot](./images/app.png)
+
+# Summary:
+
+In this tutorial we have shown you how to create a local repository, make your changes and push to the Netlify environment before publishing to your intended deployment environment.
+
+**<em>Remember to bump up your build version before deploying your code.</em>**
