@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-27 23:06:35
- * @LastEditTime: 2020-07-29 19:19:04
+ * @LastEditTime: 2020-07-29 19:57:04
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\maintain.md
@@ -14,7 +14,8 @@
 * In this tutorial, I'll provide you with tips and best practices to help you maintain your Capstone2020 starter-kit based solution app.
 
 * When testing your local development  we suggest using the [Netlify](https://www.netlify.com/) as a rapid test platform once you have your solution working the way your users expect, then deploy to your intended environment (OpenShift, Azure, AWS etc). 
-Developing in your Private Solution Repository
+
+* How to Taking Control the Solution Code from Gov's master Repository to Your Repository
 
 
 ## How to Taking Control the Solution Code from Gov's master Repository to Your Repository
