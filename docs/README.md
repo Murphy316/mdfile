@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-28 22:06:43
- * @LastEditTime: 2020-07-29 14:45:02
+ * @LastEditTime: 2020-07-29 19:10:51
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\docs\README.md
@@ -44,13 +44,49 @@ This solution conforms to the principles of cloud ready solution development and
 
 1. **Installable mobile solution:**  <em>the Capstone2020 starter kit web site was designed to be a user installable mobile solution. When the user visits the landing page they are asked if they wish to install the solution locally. The mechanics of how this I done is handled by the progressive Web App (PWA) framework.</em>
 
+    <em>Notice below: the user is prompted with an **install notice**. Optionally some devices will show an install button (shown with a yellow box)…</em>
+
+    <p align="center">
+        <img src="./images/feature1.png">
+    </p>
+
+    <em>Notice below: when a new version of the solution has been deployed to the BCDevExchange server the user will receive an **update notice …**</em>
+
+    <p align="center">
+        <img src="./images/feature2.png">
+    </p>
+
 2.  **User Session:** <em>the first time the user comes to the site they are asked to accept a consent cookie. Since our starter-kit has no user authentication module we use a cookie to track a user. The user is given the option to end a session which clears out all cookies.</em>
+
+    <p align="center">
+        <img src="./images/feature3.png">
+    </p>
+
+    <em>TIP: Developers should be familiar with the Chrome DevTools that provides debugging insight into browser and application settings. Also consider installing tools such as “WebViewTest” on the target device. The screen below shows the 
+    1) session cookie that the browser initially assigns 
+    2) the user consent cookie 
+    3) a bookmarked favorite story cookie</em>
+
+    <p align="center">
+        <img src="./images/feature4.png">
+    </p>
 
 3.	**DataBC API:** <em>the starter-kit demonstrates a fetch of the BC News API and displays news headings and stories which can be filtered based on story options. These options are controlled by the user via a drop down menu selection.</em>
 
+    API details: https://catalogue.data.gov.bc.ca/dataset/bc-gov-news-api-service
+
 4.	**Favorites/Save Story/Delete Story:** <em>a user can ‘tag’ story’s (using the pin icon) which **saves** the story (based on the story identifier) that can be retrieved and displayed when the user selects **'Favorites'** from the drop down menu. The user can **delete** a saved story from their selection list by selecting the trash can icon.</em>
 
+    <p align="center">
+        <img src="./images/feature5.png">
+    </p>
+
 5.	**Light/Dark Mode:** <em>a user can toggle between a day (light) and night (dark) mode by selecting the **Dark/Light** Mode option from the drop down menu.</em>
+
+    <p align="center">
+        <img src="./images/feature6.png">
+    </p>
+
 
 6.	**About:** <em>a user can view details about the solution by selecting the **About** option from the drop down features menu.</em>
 
