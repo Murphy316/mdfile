@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-28 22:06:43
- * @LastEditTime: 2020-07-29 19:10:51
+ * @LastEditTime: 2020-07-29 19:33:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\docs\README.md
@@ -34,7 +34,11 @@ During the summer of 2020 working with a developer team from Camosun College we 
 
 * ## PWA Starter-kit
 
-    This 'starter kit' was developed as a playbook "exemplar". We developed on the [BC DevExchange](D:\capstone2020\bcdevechange.org) OpenShift container platform and follow community best practices including adherence to the 12 factor approach. 
+    This 'starter kit' was developed as a playbook "exemplar". We developed on the BC DevExchange OpenShift container platform and follow community best practices including adherence to the 12 factor approach.
+
+    It is recommended that you take the time to investigate and understand serviceworkers. We used the code described by Gert Gluckman in this [article](https://medium.com/better-programming/let-users-know-when-you-have-updated-your-service-worker-in-create-react-app-b0c2701995b3?_branch_match_id=675824666082506600). 
+    You can find his come at this [link](https://github.com/gglukmann/cra-sw).
+
 
 ## Twelve Factors
 
@@ -104,17 +108,29 @@ The 'PWA starter kit' is based upon the create-react-app solution from Facebook 
 
 ![Screenshot](./images/architecture.png)
 
-The Capstone app is a progressive web app that can be user installed on Android devices.
-
-Using a call back serviceworker script which maintains a connection with the hosting environment thereby allowing the user to be notified when solution updates are deployed.
-
 ## App Start: 
+
+* The following sequence diagrams are intended to assist you as navigate through our code.
+
+* In the 'App Start' sequence Capstone2020 is the solution landing page  the user navigates to either from a URL or by starting their installed mobile PWA.
+
+* The App Shell is installed in memory as a single page application, the only calls are either to the NewsBC API or in the event of code updates the serviceworker will notify the user of a new solution version.
+
+* App.js is the container which handles all user interaction. Components are functions that implement the code logic such as the menu system with our features. The 'App Start' sequence diagram below shows the initial app start up.
+
+* It shows how we build the landing page consisting of a header and "sticky" footer. Retrieve news stories from the NewsBC API and request the user to accept a Consent Cookie.
+
+<br/>
 
 ![Screenshot](./images/app-start.png)
 
 ## Selecting features:
 
+* As shown in the [README.md](https://github.com/Murphy316/mdfile/blob/master/docs/README.md#features) description there are a number of features we have implemented in the starter-kit that demonstrate filtering the results that are returned from the NewsBC API as well as the other user selected options such as "Dark/Light Mode",  "Show/Hide Text", bpookmarked story "Favorites". When a user selects "End Session" all of the cookies associated with the user will be destroyed.
+
+
 ![Screenshot](./images/selecting-features.png)
+
 
 ###	Key files:
 
@@ -210,7 +226,7 @@ This is an open-source project licensed under the Apache licensing agreement and
 
 Follow the [Build Solution on your Local Environment](./build.md) tutorial.
 
-Everything you need to know about this can be found in the tutorial. It includes formats for commit messages, branch naming and PR description.
+We hope that everything you need to know about the Capstone2020 PWA starter-kit can be found in the tutorial. If you have a suggestion or an improvement please open a GitHub issue on the [main starter-kit repository](https://github.com/bcgov/CITZ-IMB-Capstone2020).
 
 ## Deploying to OpenShift
 Follow the Deploy to openshift tutorial.
