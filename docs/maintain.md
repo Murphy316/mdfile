@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-27 23:06:35
- * @LastEditTime: 2020-07-29 19:57:04
+ * @LastEditTime: 2020-07-29 21:21:07
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\maintain.md
@@ -13,7 +13,7 @@
 
 * In this tutorial, I'll provide you with tips and best practices to help you maintain your Capstone2020 starter-kit based solution app.
 
-* When testing your local development  we suggest using the [Netlify](https://www.netlify.com/) as a rapid test platform once you have your solution working the way your users expect, then deploy to your intended environment (OpenShift, Azure, AWS etc). 
+* When testing your local development, we suggest using the [Netlify](https://www.netlify.com/) as a rapid test platform once you have your solution working the way your users expect, then deploy to your intended environment (OpenShift, Azure, AWS, etc). 
 
 * How to Taking Control the Solution Code from Gov's master Repository to Your Repository
 
@@ -30,20 +30,20 @@
 3. Download the forked solution app in your local by following [build.md](./build.md)
 
 
-4. (**Optional**) If you have Contributors, you also have to make the connection between your local and the master branch for the solution app. You have to check out is your local up-to-date with master branch or not before you wants to make a pull request. If you don't do so yu might over-write others work.
+4. (**Optional**) If you have Contributors, you also have to make the connection between your local and the master branch for the solution app. You have to check out is your local up-to-date with the master branch or not before you want to make a pull request. If you don't do so you might over-write others' work.
 
-   * Checkout your remote url, run following command in terminal:
+   * Checkout your remote URL, run following command in terminal:
    ```sh
    $ git remote -v
     origin  https://github.com/${your_repo}/CITZ-IMB-Capstone2020 (fetch)
     origin  https://github.com/${your_repo}/CITZ-IMB-Capstone2020 (push)
    ```
 
-   * Adding a upstream url, run following command in terminal:
+   * Adding an upstream URL, run following command in terminal:
    ```sh
    $ git remote add upstream https://github.com/bcgov/CITZ-IMB-Capstone2020.git
    ```
-   * Checkout your remote url again, run following command in terminal:
+   * Checkout your remote URL again, run following command in terminal:
    ```sh
    $ git remote -v
     origin  https://github.com/${your_repo}/CITZ-IMB-Capstone2020 (fetch)
@@ -62,7 +62,7 @@
     * [new branch]      master     -> upstream/master
     Already up to date!
    ```
-5.  Change the [version number](https://docs.npmjs.com/updating-your-published-package-version-number), run one of the following command in terminal:
+5.  Change the [version number](https://docs.npmjs.com/updating-your-published-package-version-number), run one of the following commands in terminal:
 * (Commit everything before you increment the version number)
     ```sh
    $ git add .
@@ -93,7 +93,7 @@
 
     ![Screenshot](./images/reviewers.png)
 
-4. Wait at least one admin reviewed your changes, until [pipeline finish deployment](./deploy.md), and finally admin will click "merge" button
+4. Wait at least one admin reviewed your changes, until [pipeline finish deployment](./deploy.md), and finally, an admin will click the "merge" button
 
 ## How to deploy your local solution app to [Netlify](https://www.netlify.com/) for testing
 
@@ -109,7 +109,7 @@
    $ npm start
    ```
 
-4. Run following command in your solution root folder (the folder has package.json).. This command will generate a ./build folder under the root folder. The build folder has everything for deploying the product.
+4. Run following command in your solution root folder ( the folder has package.json ). This command will generate a ./build folder under the root folder. The build folder has everything for deploying the product.
    ```sh
    $ npm run build
     > capstone2020@0.10.1 build E:\demo\CITZ-IMB-Capstone2020
@@ -157,6 +157,6 @@
 
 # Summary:
 
-In this tutorial we have shown you how to create a local repository, make your changes and push to the Netlify environment before publishing to your intended deployment environment.
+In this tutorial, we have shown you how to create a local repository, make your changes, and push to the Netlify environment before publishing to your intended deployment environment.
 
 **<em>Remember to bump up your build version before deploying your code.</em>**

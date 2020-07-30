@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-28 22:06:43
- * @LastEditTime: 2020-07-29 19:37:59
+ * @LastEditTime: 2020-07-29 21:31:51
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\docs\README.md
@@ -12,10 +12,10 @@
 
 This solution is a react.js based client that consumes a DataBC API.
 
-<em>Capstone2020 is an application that provides a starter-kit for BC Gov programme areas to launch a user installable mobile app with the ability to deliver information to users, or to collect information from users as part of a digital solution. This guide is a designed as a series of tutorials.</em>
+<em>Capstone2020 is an application that provides a starter-kit for BC Gov program areas to launch a user-installable mobile app with the ability to deliver information to users or to collect information from users as part of a digital solution. This guide is designed as a series of tutorials.</em>
 
 ## Prerequisites
-It is assumed that your team is familiar with modern web based programming languages and techniques. This solution was developed using:
+It is assumed that your team is familiar with modern web-based programming languages and techniques. This solution was developed using:
 
 * [react.js](https://reactjs.org/docs/getting-started.html) framework and,
 
@@ -34,7 +34,7 @@ During the summer of 2020 working with a developer team from Camosun College we 
 
 * ## PWA Starter-kit
 
-    This 'starter kit' was developed as a playbook "exemplar". We developed on the BC DevExchange OpenShift container platform and follow community best practices including adherence to the 12 factor approach.
+    This 'starter kit' was developed as a playbook "exemplar". We developed on the BC DevExchange OpenShift container platform and follow community best practices including adherence to the 12-factor approach.
 
     It is recommended that you take the time to investigate and understand serviceworkers. We used the code described by Gert Gluckman in this [article](https://medium.com/better-programming/let-users-know-when-you-have-updated-your-service-worker-in-create-react-app-b0c2701995b3?_branch_match_id=675824666082506600). 
     You can find his come at this [link](https://github.com/gglukmann/cra-sw).
@@ -42,13 +42,13 @@ During the summer of 2020 working with a developer team from Camosun College we 
 
 ## Twelve Factors
 
-This solution conforms to the principles of cloud ready solution development and follows the twelve factors approach. We describe how we conform in this [article](./TwelveFactor.md).
+This solution conforms to the principles of cloud-ready solution development and follows the twelve factors approach. We describe how we conform in this [article](./TwelveFactor.md).
 
 # Features
 
-1. **Installable mobile solution:**  <em>the Capstone2020 starter kit web site was designed to be a user installable mobile solution. When the user visits the landing page they are asked if they wish to install the solution locally. The mechanics of how this I done is handled by the progressive Web App (PWA) framework.</em>
+1. **Installable mobile solution:**  <em>the Capstone2020 starter kit web site was designed to be a user-installable mobile solution. When the user visits the landing page they are asked if they wish to install the solution locally. The mechanics of how this I have done is handled by the progressive Web App (PWA) framework.</em>
 
-    <em>Notice below: the user is prompted with an **install notice**. Optionally some devices will show an install button (shown with a yellow box)…</em>
+    <em>Notice below: the user is prompted with an **install notice**. Optionally some devices will show an install button ( shown with a yellow box )</em>
 
     <p align="center">
         <img src="./images/feature1.png">
@@ -60,13 +60,13 @@ This solution conforms to the principles of cloud ready solution development and
         <img src="./images/feature2.png">
     </p>
 
-2.  **User Session:** <em>the first time the user comes to the site they are asked to accept a consent cookie. Since our starter-kit has no user authentication module we use a cookie to track a user. The user is given the option to end a session which clears out all cookies.</em>
+2.  **User Session:** <em>the first time the user comes to the site they are asked to accept a consent cookie. Since our starter-kit has no user authentication module we use a cookie to track a user. The user is given the option to end a session that clears out all cookies.</em>
 
     <p align="center">
         <img src="./images/feature3.png">
     </p>
 
-    <em>TIP: Developers should be familiar with the Chrome DevTools that provides debugging insight into browser and application settings. Also consider installing tools such as “WebViewTest” on the target device. The screen below shows the 
+    <em>TIP: Developers should be familiar with the Chrome DevTools that provides debugging insight into browser and application settings. Also, consider installing tools such as “WebViewTest” on the target device. The screen below shows the 
     1) session cookie that the browser initially assigns 
     2) the user consent cookie 
     3) a bookmarked favorite story cookie</em>
@@ -75,24 +75,24 @@ This solution conforms to the principles of cloud ready solution development and
         <img src="./images/feature4.png">
     </p>
 
-3.	**DataBC API:** <em>the starter-kit demonstrates a fetch of the BC News API and displays news headings and stories which can be filtered based on story options. These options are controlled by the user via a drop down menu selection.</em>
+3.	**DataBC API:** <em>the starter-kit demonstrates a fetch of the BC News API and displays news headings and stories which can be filtered based on story options. These options are controlled by the user via a drop-down menu selection.</em>
 
     API details: https://catalogue.data.gov.bc.ca/dataset/bc-gov-news-api-service
 
-4.	**Favorites/Save Story/Delete Story:** <em>a user can ‘tag’ story’s (using the pin icon) which **saves** the story (based on the story identifier) that can be retrieved and displayed when the user selects **'Favorites'** from the drop down menu. The user can **delete** a saved story from their selection list by selecting the trash can icon.</em>
+4.	**Favorites/Save Story/Delete Story:** <em>a user can ‘tag’ story’s (using the pin icon) which **saves** the story (based on the story identifier) that can be retrieved and displayed when the user selects **'Favorites'** from the drop-down menu. The user can **delete** a saved story from their selection list by selecting the trash can icon.</em>
 
     <p align="center">
         <img src="./images/feature5.png">
     </p>
 
-5.	**Light/Dark Mode:** <em>a user can toggle between a day (light) and night (dark) mode by selecting the **Dark/Light** Mode option from the drop down menu.</em>
+5.	**Light/Dark Mode:** <em>a user can toggle between a day (light) and night (dark) mode by selecting the **Dark/Light** Mode option from the drop down-menu.</em>
 
     <p align="center">
         <img src="./images/feature6.png">
     </p>
 
 
-6.	**About:** <em>a user can view details about the solution by selecting the **About** option from the drop down features menu.</em>
+6.	**About:** <em>a user can view details about the solution by selecting the **About** option from the drop-down features menu.</em>
 
 # Solution Architecture
 
@@ -116,7 +116,7 @@ The 'PWA starter kit' is based upon the create-react-app solution from Facebook 
 
 * The App Shell is installed in memory as a single page application, the only calls are either to the NewsBC API or in the event of code updates the serviceworker will notify the user of a new solution version.
 
-* App.js is the container which handles all user interaction. Components are functions that implement the code logic such as the menu system with our features. The 'App Start' sequence diagram below shows the initial app start up.
+* App.js is the container that handles all user interaction. Components are functions that implement the code logic such as the menu system with our features. The 'App Start' sequence diagram below shows the initial app startup.
 
 * It shows how we build the landing page consisting of a header and "sticky" footer. Retrieve news stories from the NewsBC API and request the user to accept a Consent Cookie.
 
@@ -126,7 +126,7 @@ The 'PWA starter kit' is based upon the create-react-app solution from Facebook 
 
 ## Selecting features:
 
-* As shown in the [Features](https://github.com/Murphy316/mdfile/blob/master/docs/README.md#features) description there are a number of features we have implemented in the starter-kit that demonstrate filtering the results that are returned from the NewsBC API as well as the other user selected options such as "Dark/Light Mode",  "Show/Hide Text", bpookmarked story "Favorites". When a user selects "End Session" all of the cookies associated with the user will be destroyed.
+* As shown in the [Features](https://github.com/Murphy316/mdfile/blob/master/docs/README.md#features) description there are several features we have implemented in the starter-kit that demonstrate filtering the results that are returned from the NewsBC API as well as the other user-selected options such as "Dark/Light Mode",  "Show/Hide Text", bookmarked story "Favorites". When a user selects "End Session" all of the cookies associated with the user will be destroyed.
 
 
 ![Screenshot](./images/selecting-features.png)
@@ -136,7 +136,7 @@ The 'PWA starter kit' is based upon the create-react-app solution from Facebook 
 
 To view the file folder structure and hierarchy review the [build.md](./build.md) file
 
-The main files you will familiarize youself with are: 
+The main files you will familiarize yourself with are: 
 
 
 [./.env](https://github.com/bcgov/CITZ-IMB-Capstone2020/blob/master/.env) : where the news API located.
@@ -203,17 +203,17 @@ The main files you will familiarize youself with are:
 
 # Possible solution enhancements
 
-1.	**User Stories**,  maintaining a user story catalogue ensures that developed features align to value statements and identify enhancement opportunities.
+1.	**User Stories**,  maintaining a user story catalog  ensures that developed features align to value statements and identify enhancement opportunities.
 
-2.	**Push notification**, incorporate a communication channel to the user notifying them of specific features , service availability windows, feedback channels. PWA architecture supports this ability.
+2.	**Push notification**, incorporate a communication channel to the user notifying them of specific features, service availability windows, feedback channels. PWA architecture supports this ability.
 
 3.	**Testing**, due to time considerations we did not develop a robust suite of tests using jest or Enzyme. You should!
 
-4.	**Logging**, on the roadmap but not implemented. Incorporate analytics by logging events that will provide information about the user experience. Consider using the winston library and logging  your event streams to the IMB Logstash collector. 
+4.	**Logging**, on the roadmap but not implemented. Incorporate analytics by logging events that will provide information about the user experience. Consider using the Winston library and logging your event streams to the IMB Logstash collector. 
 
 5.	**Menu system**, consider implementing a sliding menu as is common in most mobile apps
 
-6.	**Database**, the starter kit would benefit by having a backing database service and the use of Redux (or equiv) robust data handling.
+6.	**Database**, the starter kit would benefit by having a backing database service and the use of Redux (or Equiv) robust data handling.
 
 7.	**Oauth**, there are use cases where user authentication is a requirement
 
@@ -229,7 +229,7 @@ Follow the [Build Solution on your Local Environment](./build.md) tutorial.
 We hope that everything you need to know about the Capstone2020 PWA starter-kit can be found in the tutorial. If you have a suggestion or an improvement please open a GitHub issue on the [main starter-kit repository](https://github.com/bcgov/CITZ-IMB-Capstone2020).
 
 ## Deploying to OpenShift
-Follow the Deploy to openshift tutorial.
+Follow the Deploy to OpenShift tutorial.
 
 * [Morden web apps to OpenShift Part 1 - Web apps in two commands](https://developers.redhat.com/blog/2018/10/04/modern-web-apps-openshift-part-1/)
 
@@ -245,7 +245,7 @@ Everything you need to know about this can be found in the tutorial.
 
 Follow the [Maintain Capstone2020 Solution App](./maintain.md) tutorial
 
-Everything you need to know about this can be found in the tutorial. It includes formats for commit messages, branch naming and PR description.
+Everything you need to know about this can be found in the tutorial. It includes formats for commit messages, branch naming, and PR description.
 
 
 ### Useful links

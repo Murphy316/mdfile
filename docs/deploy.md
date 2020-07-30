@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-07-28 00:06:04
- * @LastEditTime: 2020-07-29 11:42:08
+ * @LastEditTime: 2020-07-29 21:14:03
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \undefinedc:\Users\Mark\Desktop\md\deploy.md
@@ -10,7 +10,7 @@
 
 # Introduction
 
-The following workflow explains what is the process of creating, pushing, and deploying Capstone2020 solution app from local -> github -> Jenkins -> OpenShift.
+The following workflow explains what is the process of creating, pushing, and deploying the Capstone2020 solution app from local -> GitHub -> Jenkins -> OpenShift.
 
 ## Expected flow workflow.png
 
